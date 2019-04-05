@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assessment</title>
+  </head>
+  <link rel="stylesheet" href="omni-slider.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <body>
+    <div class="grid-wrapper">
+      <header class="block header">
+        <div class="header-left"></div>
+        <div class="header-right">
+          <h1 class="header-title">Thomas Hoenselaars</h1>
+          <h2 class="header-sub">Junior Frontend Developer</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae architecto beatae molestiae deleniti sint ad alias. Accusamus, iure consectetur nisi possimus illo adipisci beatae, ab dolorum quo velit culpa vero.</p>
+        </div>
+      </header>
+      <main class="main-content">
+        <aside class="block filter-column">
+          <h2 class="title">Search</h2>
+
+          <h3 class="title-descr">By Project:</h3>
+          <form class="search-form">
+            <input type="text" class="form-input" placeholder="Project..." id="search-course" />
+            <span><i class="fa fa-search"></i> </span>
+          </form>
+
+          <h3 class="title-descr">By Project Type:</h3>
+
+          <ul class="filter-cat">
+            <li><a href="#" class="filter-btn" data-filter="freelance">Freelance</a></li>
+            <li><a href="#" class="filter-btn" data-filter="assignment">Assignment</a></li>
+          </ul>
+        </aside>
+        <section class="block results-column">
+          <h2 class="title">Projects</h2>
+
+          <!-- alle courses -->
+          <div id="courses" class="courses-grid">
+            <!-- enkele course -->
+            <div class="course freelance">
+              <div class="card">
+                <img src="images/mow.png" alt="" class="card-img" />
+                <div class="card-body">
+                  <div class="card-top">
+                    <h3 class="course-name">MOW Music</h3>
+                  </div>
+                  <p class="course-cat">Freelance</p>
+                  <p class="course-description">Freelance job for Music producer MOW Music <br /><br />With: fullpageJS and Flickity</p>
+                </div>
+              </div>
+            </div>
+            <div class="course freelance">
+              <div class="card">
+                <img src="images/drumdrumdrum.png" alt="" class="card-img" />
+                <div class="card-body">
+                  <div class="card-top">
+                    <h3 class="course-name">Drumdrumdrum</h3>
+                  </div>
+                  <p class="course-cat">Freelance</p>
+                  <p class="course-description">Freelance job for Dutch drum school Drumdrumdrum</p>
+                </div>
+              </div>
+            </div>
+            <div class="course assignment">
+              <div class="card">
+                <img src="images/paradiso.png" alt="" class="card-img" />
+                <div class="card-body">
+                  <div class="card-top">
+                    <h3 class="course-name">Week 12: Paradiso</h3>
+                  </div>
+                  <p class="course-cat">Assignment</p>
+
+                  <p class="course-description">In week 12 of the Noah Road reskilling course I rebuilt part of the Paradiso homepage including the overlay menu/search. No JS.</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="course assignment">
+              <div class="card">
+                <img src="https://source.unsplash.com/random/800x600/?sig=124" alt="" class="card-img" />
+                <div class="card-body">
+                  <div class="card-top">
+                    <h3 class="course-name">Week 11: Akai Professional</h3>
+                  </div>
+                  <p class="course-cat">Assignment</p>
+
+                  <p class="course-description">In week 11 of the Noah Road reskilling course I rebuilt the Akai Professional homepage. First try with actual dropdown menu's. No JS.</p>
+                </div>
+              </div>
+            </div> -->
+            <div class="course assignment">
+              <div class="card">
+                <img src="images/pathe.png" alt="" class="card-img" />
+                <div class="card-body">
+                  <div class="card-top">
+                    <h3 class="course-name">Week 9: Pathe</h3>
+                  </div>
+                  <p class="course-cat">Assignment</p>
+
+                  <p class="course-description">In week 9 of the Noah Road reskilling course I rebuilt the Pathe homepage. No JS.</p>
+                </div>
+              </div>
+            </div>
+            <div class="course assignment">
+              <div class="card">
+                <img src="images/allerhande.png" alt="" class="card-img" />
+                <div class="card-body">
+                  <div class="card-top">
+                    <h3 class="course-name">Week 8: Allerhande</h3>
+                  </div>
+                  <p class="course-cat">Assignment</p>
+
+                  <p class="course-description">In week 8 of the Noah Road reskilling course I rebuilt the Allerhande homepage. First try with full grid layout. No JS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="block footer">
+        <div>
+          <p>Bel me please</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="omni-slider.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
