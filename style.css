@@ -1,10 +1,14 @@
+:root {
+  --main-color: cornflowerblue;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: cornflowerblue;
+  background-color: var(--main-color);
   font-family: Poppins, Helvetica, sans-serif;
   font-size: 0.85rem;
 }
@@ -51,7 +55,7 @@ img {
 .header-right {
   flex: 1 1 50%;
   padding: 1rem;
-  background-color: cornflowerblue;
+  background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +89,7 @@ img {
 }
 
 .filter-column {
-  background-color: cornflowerblue;
+  background-color: var(--main-color);
   color: white;
 }
 
