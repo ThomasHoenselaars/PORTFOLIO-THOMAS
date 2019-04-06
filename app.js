@@ -72,20 +72,3 @@ filterBtn.forEach(btn => {
     displayMatches(filters);
   });
 });
-
-// Price Slider
-
-var slider3 = new Slider(document.getElementById("slider3"), {
-  isDate: false,
-  min: 0,
-  max: 300,
-  start: 40,
-  end: 120,
-  overlap: true
-});
-slider3.subscribe("moving", function(data) {
-  document.getElementById("min3").innerHTML = "$" + Math.round(data.left);
-  document.getElementById("max3").innerHTML = "$" + Math.round(data.right);
-});
-document.getElementById("min3").innerHTML = "$" + Math.round(slider3.getInfo().left);
-document.getElementById("max3").innerHTML = "$" + Math.round(slider3.getInfo().right);

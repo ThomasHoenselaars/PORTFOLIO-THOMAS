@@ -95,6 +95,7 @@ img {
   align-items: center;
   background: white;
   margin-bottom: 3rem;
+  color: black;
 }
 
 .form-input {
@@ -125,6 +126,7 @@ img {
   margin: 0.5rem 0;
   width: 9rem;
   color: black;
+  border: 1px solid white;
 }
 
 .filter-btn {
@@ -133,7 +135,7 @@ img {
 }
 
 .filter-cat li:hover {
-  background: rgba(159, 196, 207, 0.7);
+  background: rgba(90, 149, 210, 0.9);
 }
 
 .course {
@@ -158,10 +160,10 @@ img {
 }
 
 .active {
-  background: rgba(139, 37, 37, 0.2);
+  background: rgba(90, 149, 210, 0.9);
   text-decoration: underline;
   color: white;
-  border-left: 10px solid rgba(159, 196, 207, 0.897);
+  border-left: 10px solid white;
   position: relative;
 }
 
