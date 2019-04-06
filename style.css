@@ -25,7 +25,6 @@ img {
 }
 
 .header {
-  grid-area: header;
   background-color: #f9f9f9;
   margin: 0 auto;
   /* max-width: 70rem; */
@@ -53,26 +52,28 @@ img {
   flex: 1 1 50%;
   padding: 1rem;
   background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header-title {
   font-size: 3rem;
+  margin-bottom: 0;
 }
 
-/* .grid-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-template-areas:
-    ". header ."
-    ". content ."
-    ". footer .";
-} */
+.socialmedia-nav {
+  display: flex;
+  width: 100%;
+}
+
+.socialmedia-nav li {
+  padding: 1rem 1rem 0 0;
+}
 
 .main-content {
-  /* max-width: 70rem; */
   margin: 0 auto;
   width: 100%;
-  grid-area: content;
   display: grid;
   grid-template-columns: 1fr 3fr;
   min-height: 80vh;
@@ -141,7 +142,6 @@ img {
 .course {
   box-shadow: 0 2px 2px 0 rgba(34, 34, 34, 0.08);
   background-color: white;
-  /* max-width: 255px; */
 }
 
 .card-top {
@@ -181,30 +181,6 @@ img {
   z-index: 2;
 }
 
-.footer {
-  grid-area: footer;
-  background-color: cornflowerblue;
-  box-shadow: 0 2px 2px 0 rgba(34, 34, 34, 0.08);
-  height: 10rem;
-  margin: 0 auto;
-  margin-top: 3rem;
-  /* max-width: 70rem; */
-  width: 100%;
-  display: flex;
-  padding: 0;
-}
-
-/* Slider CSS overwrite */
-.slider .handle {
-  transform: scale(0.5);
-}
-.slider .slider-fill {
-  background: rgba(159, 196, 207, 0.897);
-}
-.slider .slider-circle {
-  background-color: rgba(159, 196, 207, 0.897);
-}
-
 @media screen and (max-width: 1180px) {
   .courses-grid {
     display: grid;
@@ -215,6 +191,10 @@ img {
 }
 
 @media screen and (max-width: 800px) {
+  .header {
+    flex-flow: column wrap;
+  }
+
   .main-content {
     margin-top: 2rem;
     grid-area: content;
